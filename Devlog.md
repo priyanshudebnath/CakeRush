@@ -13,21 +13,13 @@ Completed:
 
 Challenges:
 	- None
-	
-Next :
-	Shop:
-	Background/floor
-	Preparation counter
-	Oven
-	Decoration counter
-	Serving counter
 
-	Cake:
-	A temporary cake image/shape
+## Day 2 - 2026/09/08
 
-	Customer:
-	A temporary character shape
+Completed:
+	Set up Git repo
+	Complete counter and oven image with tilemaplayer
+	Added customer
 
-	UI:
-	Money text
-	Maybe an empty order box
+Challenges:
+	TilemapLayer Error

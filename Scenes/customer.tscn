@@ -1,7 +1,39 @@
 [gd_scene format=3 uid="uid://oxdpavdoat5h"]
 
-[node name="Customer" type="Node2D" unique_id=307538929]
+[ext_resource type="Texture2D" uid="uid://cf1bjt6l66k2a" path="res://Assets/Art/Isometric_Frog_Character/CharacterSheet_CharacterFront.png" id="1_fp685"]
 
-[node name="orderBubble" type="Node2D" parent="." unique_id=1875166890]
+[sub_resource type="AtlasTexture" id="AtlasTexture_7c3kf"]
+atlas = ExtResource("1_fp685")
+region = Rect2(0, 0, 350, 350)
 
-[node name="patienceBar" type="Node2D" parent="." unique_id=360756751]
+[sub_resource type="AtlasTexture" id="AtlasTexture_0v30w"]
+atlas = ExtResource("1_fp685")
+region = Rect2(350, 0, 350, 350)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d0u6y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7c3kf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0v30w")
+}],
+"loop": 1,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[node name="Customer" type="Node2D" unique_id=1127691295]
+
+[node name="orderBubble" type="Node" parent="." unique_id=437179993]
+
+[node name="patienceBar" type="Node" parent="." unique_id=1513272905]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=640971770]
+position = Vector2(328, 180)
+sprite_frames = SubResource("SpriteFrames_d0u6y")
+animation = &"Idle"
+autoplay = "Idle"
+frame = 1
+frame_progress = 0.98623735
