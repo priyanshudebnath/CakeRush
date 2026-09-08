@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c1vy0d5ls6nhe"]
+
+[ext_resource type="Texture2D" uid="uid://ba5yf8ewrwvnu" path="res://Assets/Art/Bakery.png" id="1_2706n"]
+
+[node name="Bakery" type="Node2D" unique_id=1769556937]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1026397265]
+position = Vector2(565.00006, 332)
+scale = Vector2(0.5246093, 0.37695313)
+texture = ExtResource("1_2706n")
